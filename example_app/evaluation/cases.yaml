@@ -1,0 +1,25 @@
+cases:
+  - id: password-reset
+    question: "The password reset email never arrived. What steps should I take?"
+    must_include:
+      - "Forgot password"
+      - "Owner"
+      - "Members"
+    notes: "Ensure the response recommends the forgot password flow and manual reset escalation."
+
+  - id: plan-limits
+    question: "What are the seat limits and storage caps for each NimbusWorkspaces plan?"
+    must_include:
+      - "Starter"
+      - "Growth"
+      - "Scale"
+      - "5 GB"
+    notes: "The agent should enumerate the plans with limits to prove retrieval."
+
+  - id: data-retention
+    question: "How long are deleted files kept and what export options exist?"
+    must_include:
+      - "30 days"
+      - "Data Export"
+      - ".zip"
+    notes: "Verifies the agent references the retention policy and export path."
