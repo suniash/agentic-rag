@@ -236,7 +236,7 @@ Collecting these FAQs as artifacts (recordings, issues, wiki pages) compounds ov
 
 ## 6. Build-ready project ideas
 
-Use these blueprints for hackathons, open-source repos, or Medium articles. Each idea highlights the agentic behaviours to emphasise.
+Use these blueprints for hackathons, open-source repos, or blog posts. Each idea highlights the agentic behaviours to emphasise.
 
 ### 6.1 Core educational builds
 
