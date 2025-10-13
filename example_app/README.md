@@ -45,14 +45,14 @@ You can add your own `.txt` or `.md` files to the `data/` folder before running 
 Start the chat loop once the index is ready:
 
 ```bash
-python main.py --model gpt-4o-mini --top-k 4 --verbose --show-sources
+python main.py --model gpt-4.1-mini --top-k 4 --verbose --show-sources
 ```
 
 Key CLI flags:
 
 | Flag | Description |
 | --- | --- |
-| `--model` | Choose the OpenAI chat model for the agent policy (default `gpt-4o-mini`). |
+| `--model` | Choose the OpenAI chat model for the agent policy (default `gpt-4.1-mini`). |
 | `--temperature` | Adjust response creativity (default `0.0`). |
 | `--embedding-model` | Embeddings model used for FAISS loading (default `text-embedding-3-small`). |
 | `--top-k` | Number of documents retrieved per query. |
