@@ -1,54 +1,67 @@
-# Agentic RAG Learning Hub
+# Agentic RAG: A Beginner-Friendly Tutorial
 
-The goal of this repository is to serve as a **technical playbook** for teams who want to build production-ready Agentic Retrieval-Augmented Generation (RAG) systems. Inside you will find:
+Welcome! This repository is a guided workshop for anyone who wants to understand **Retrieval-Augmented Generation (RAG)** and then take the next step into **agentic RAG** systems. Everything here is written with curious engineers, students, and self-taught builders in mind. If you can run Python notebooks, you can work through this repo and build your own agentic RAG prototype.
 
-| Resource | What it covers |
+## What you'll learn
+
+* The building blocks of classic RAG (retrieval + answer synthesis).
+* Why teams are adding agentic behaviours like planning, reflection, and tool use.
+* How to progress from a minimal baseline to more capable agentic workflows.
+* Practical tips for running, evaluating, and extending your own projects.
+
+## How to use this repo
+
+1. **Start with the traditional RAG notebook** – `notebooks/0_traditional_rag_tutorial.ipynb` walks through the retrieval pipeline step by step using pure Python and NumPy so you can see every moving part.
+2. **Skim the written guide** – `docs/agentic_rag_beginner_guide.md` explains the ideas behind agentic RAG and points to concrete design patterns.
+3. **Run the agentic notebooks** – The numbered notebooks build on the baseline with self-improvement loops, planners, reflection, multi-agent coordination, verification, and evaluation tooling.
+4. **Experiment with the example app** – `example_app/` contains a small command-line project that ties the concepts together with ingestion, retrieval, and agent orchestration code you can adapt.
+
+Take notes as you go, pause to tweak prompts or datasets, and re-run cells until the flow makes sense. This is meant to feel like a guided lab, not a lecture.
+
+## Traditional vs. agentic RAG at a glance
+
+| Classic RAG | Agentic RAG |
 | --- | --- |
-| [`docs/agentic_rag_beginner_guide.md`](docs/agentic_rag_beginner_guide.md) | Medium-style explainer that walks through the “why”, “what”, and “how” of agentic RAG along with implementation blueprints and checklists. |
-| [`docs/learning_pathways.md`](docs/learning_pathways.md) | Persona-based learning plans that map the repo’s assets to Explorer, Builder, and Operator journeys. |
-| [`example_app/`](example_app/) | Runnable Python project that demonstrates document ingestion, agent orchestration, evaluation hooks, and a CLI chat interface. |
-| [`notebooks/`](notebooks/) | Hands-on curriculum of Jupyter notebooks comparing baseline, self-improving micro-loops, planner/executor, reflective, multi-agent, verified, adaptive, and evaluation-focused Agentic RAG patterns. |
+| Single-shot retrieval + response. | Multi-step reasoning with planners, critics, or tool calls. |
+| Relies on static prompts. | Dynamically adjusts prompts, data sources, or strategies. |
+| Useful for FAQ-style tasks. | Handles open-ended tasks that need judgement or iteration. |
+| Notebook: `0_traditional_rag_tutorial.ipynb` | Notebooks: `1_` through `8_` for progressive agentic patterns |
 
-## Who this is for
+Use the new baseline notebook to anchor your understanding before diving into the advanced flows—the differences will stand out more clearly once you have walked through the simpler path.
 
-* **Founders & product leaders** evaluating whether agentic RAG can unlock new capabilities in their product.
-* **Engineers & data scientists** who need reference implementations, design decisions, and operational guidance.
-* **Technical writers & advocates** crafting educational content (e.g., Medium posts) that requires reproducible examples.
-
-## Quick start
-
-1. **Read the playbook** – The article in `docs/` lays the conceptual foundation, references best practices, and highlights common pitfalls.
-2. **Run the example app** – Follow the setup instructions in [`example_app/README.md`](example_app/README.md) to ingest documents and chat with the agent locally.
-3. **Pick a learning pathway** – Use [`docs/learning_pathways.md`](docs/learning_pathways.md) to decide whether you are exploring, prototyping, or preparing for production.
-4. **Adapt to your use case** – Swap out the sample knowledge base, register new tools, and plug the evaluation harness into your own prompts to accelerate experimentation.
-
-## Repository structure
+## Repository tour
 
 ```
-├── docs/
-│   └── agentic_rag_beginner_guide.md   # Theory + playbook + deployment guidance
-├── example_app/
-│   ├── README.md                       # Setup and usage instructions
-│   ├── data/                           # Sample knowledge base
-│   ├── evaluation/                     # Lightweight evaluation harness
-│   ├── ingest.py                       # Build the FAISS vector store
-│   ├── evaluate.py                     # Run automated retrieval/answering checks
-│   └── main.py                         # Interactive CLI agent
-├── notebooks/
-│   ├── README.md                       # Notebook roadmap and setup instructions
-│   ├── requirements.txt                # Extra dependencies for the curriculum
-│   └── *.ipynb                         # Progressive Agentic RAG walkthroughs
-└── README.md                           # You are here
+docs/
+  agentic_rag_beginner_guide.md   # Conceptual walkthroughs and checklists
+docs/learning_pathways.md         # Suggested study routes for different roles
+example_app/                      # Runnable CLI example with ingestion + chat agent
+notebooks/
+  0_traditional_rag_tutorial.ipynb  # Build a classic RAG pipeline from scratch
+  1_* through 8_*                   # Agentic enhancements with planners, loops, and evaluation
+  README.md                         # Notebook setup notes and quick links
+  requirements.txt                  # Extra packages for the advanced notebooks
 ```
 
-> ℹ️ **OpenAI API key required** – Export `OPENAI_API_KEY` before running the example application. Additional environment configuration tips are documented in `example_app/README.md`.
+## Getting started
 
-## Contributing
+```bash
+# Install base requirements (create a virtual environment if you prefer)
+pip install -r notebooks/requirements.txt
 
-Have ideas to improve the playbook or example app? Open an issue or submit a pull request with enhancements such as:
+# Export your OpenAI key before running the agentic notebooks or example app
+export OPENAI_API_KEY="sk-..."
 
-- Additional tool integrations (SQL, REST, analytics, etc.).
-- Observability and evaluation utilities.
-- Deployment recipes for serverless, containers, or chat platforms.
+# Launch JupyterLab to explore the curriculum
+jupyter lab notebooks
+```
 
-Together we can make this a go-to resource for the agentic RAG community.
+The traditional RAG notebook relies only on NumPy and the Python standard library, so you can open it first even if you have not installed every optional package yet.
+
+## Where to go next
+
+* Extend the example app with your own documents or tools.
+* Try the evaluation notebook to measure retrieval quality on your data.
+* Share feedback or improvements by opening an issue or pull request.
+
+Happy building, and enjoy the journey from simple retrieval to full agentic systems!

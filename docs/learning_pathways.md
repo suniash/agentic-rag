@@ -71,7 +71,7 @@ Each persona builds on the previous one. Completing Explorer tasks gives you the
 
 ## Learning evidence checklist
 
-Use this checklist to track progress regardless of persona. If you can tick each box, you have a credible story for peers, managers, or Medium readers.
+Use this checklist to track progress regardless of persona. If you can tick each box, you have a credible story for peers, managers, or blog readers.
 
 - [ ] **Context brief** – A short doc describing the user problem, target metrics, and assumptions.
 - [ ] **Architecture sketch** – Screenshot or diagram of your agent graph and data flow.
