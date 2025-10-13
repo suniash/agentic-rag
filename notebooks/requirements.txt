@@ -1,0 +1,12 @@
+jupyterlab>=4.2.0
+ipywidgets>=8.1.2
+numpy>=1.26.4
+langchain==0.1.20
+langchain-openai==0.1.7
+langchain-community==0.0.38
+faiss-cpu==1.7.4
+python-dotenv==1.0.1
+pandas>=2.2.2
+matplotlib>=3.8.4
+ragas>=0.1.6
+trulens-eval>=0.23.0

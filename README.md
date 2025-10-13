@@ -5,7 +5,9 @@ The goal of this repository is to serve as a **technical playbook** for teams wh
 | Resource | What it covers |
 | --- | --- |
 | [`docs/agentic_rag_beginner_guide.md`](docs/agentic_rag_beginner_guide.md) | Medium-style explainer that walks through the “why”, “what”, and “how” of agentic RAG along with implementation blueprints and checklists. |
+| [`docs/learning_pathways.md`](docs/learning_pathways.md) | Persona-based learning plans that map the repo’s assets to Explorer, Builder, and Operator journeys. |
 | [`example_app/`](example_app/) | Runnable Python project that demonstrates document ingestion, agent orchestration, evaluation hooks, and a CLI chat interface. |
+| [`notebooks/`](notebooks/) | Hands-on curriculum of Jupyter notebooks comparing baseline, self-improving micro-loops, planner/executor, reflective, multi-agent, verified, adaptive, and evaluation-focused Agentic RAG patterns. |
 
 ## Who this is for
 
@@ -17,7 +19,8 @@ The goal of this repository is to serve as a **technical playbook** for teams wh
 
 1. **Read the playbook** – The article in `docs/` lays the conceptual foundation, references best practices, and highlights common pitfalls.
 2. **Run the example app** – Follow the setup instructions in [`example_app/README.md`](example_app/README.md) to ingest documents and chat with the agent locally.
-3. **Adapt to your use case** – Swap out the sample knowledge base, register new tools, and plug the evaluation harness into your own prompts to accelerate experimentation.
+3. **Pick a learning pathway** – Use [`docs/learning_pathways.md`](docs/learning_pathways.md) to decide whether you are exploring, prototyping, or preparing for production.
+4. **Adapt to your use case** – Swap out the sample knowledge base, register new tools, and plug the evaluation harness into your own prompts to accelerate experimentation.
 
 ## Repository structure
 
@@ -31,6 +34,10 @@ The goal of this repository is to serve as a **technical playbook** for teams wh
 │   ├── ingest.py                       # Build the FAISS vector store
 │   ├── evaluate.py                     # Run automated retrieval/answering checks
 │   └── main.py                         # Interactive CLI agent
+├── notebooks/
+│   ├── README.md                       # Notebook roadmap and setup instructions
+│   ├── requirements.txt                # Extra dependencies for the curriculum
+│   └── *.ipynb                         # Progressive Agentic RAG walkthroughs
 └── README.md                           # You are here
 ```
 

@@ -18,7 +18,7 @@ from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 class AgentConfig:
     """Configuration parameters for the agent and retrieval stack."""
 
-    model: str = "gpt-4o-mini"
+    model: str = "gpt-4.1-mini"
     temperature: float = 0.0
     embedding_model: str = "text-embedding-3-small"
     top_k: int = 4

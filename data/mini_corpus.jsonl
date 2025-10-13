@@ -1,0 +1,2 @@
+{"id": "doc-001", "title": "RAG Overview", "text": "Retrieval-augmented generation pairs a language model with a retriever so answers stay grounded in external context."}
+{"id": "doc-002", "title": "Vector Databases", "text": "Vector databases store embeddings and support similarity search to fetch the most relevant context for a query."}
